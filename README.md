@@ -15,13 +15,13 @@ A rest API for querying and retrieving scoped news and information that are avai
 
 Run these commands
 
-```CREATE DATABASE news_portal;
+```CREATE DATABASE news_portal;```
 
-CREATE TABLE users(id serial PRIMARY KEY,name text,role varchar,department_id int);
+```CREATE TABLE users(id serial PRIMARY KEY,name text,role varchar,department_id int);```
 
-CREATE TABLE departments(id serial PRIMARY KEY,name varchar,description varchar,employees int);
+```CREATE TABLE departments(id serial PRIMARY KEY,name varchar,description varchar,employees int);```
 
-CREATE TABLE news(id serial PRIMARY KEY,text varchar,department varchar);```
+```CREATE TABLE news(id serial PRIMARY KEY,text varchar,department varchar);```
 
 ### Author's Information
 * Github: [Peter Njenga](https://github.com/han254)
