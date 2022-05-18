@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d81fc5-607b-4f26-af05-45a614de8b54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oUsersDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oDepartmentNewsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oNewsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/DepartmentNewsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/NewsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oDepartmentNewsDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oNewsDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/sql2oDepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oDepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/sql2oUsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oUsersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/UsersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/UsersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/DepartmentNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DepartmentNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/News.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/DB/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/sql2oDepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oDepartmentDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,10 +80,12 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="dao" />
+      <recent name="interfaces" />
+      <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.sql2oUsersDaoTest">
-    <configuration name="sql2oDepartmentDaoTest.clearAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.sql2oDepartmentNewsDaoTest">
+    <configuration name="sql2oDepartmentNewsDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="News-portal.test" />
       <extension name="coverage">
         <pattern>
@@ -91,29 +94,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.sql2oDepartmentDaoTest" />
-      <option name="METHOD_NAME" value="clearAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sql2oUsersDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="News-portal.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.sql2oUsersDaoTest" />
+      <option name="MAIN_CLASS_NAME" value="dao.sql2oDepartmentNewsDaoTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sql2oUsersDaoTest.clearAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="sql2oDepartmentNewsDaoTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="News-portal.test" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +109,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.sql2oUsersDaoTest" />
-      <option name="METHOD_NAME" value="clearAllUsers" />
+      <option name="MAIN_CLASS_NAME" value="dao.sql2oDepartmentNewsDaoTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sql2oUsersDaoTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="sql2oDepartmentNewsDaoTest.clearAllDepartmentNews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="News-portal.test" />
       <extension name="coverage">
         <pattern>
@@ -138,14 +125,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.sql2oUsersDaoTest" />
-      <option name="METHOD_NAME" value="deleteById" />
+      <option name="MAIN_CLASS_NAME" value="dao.sql2oDepartmentNewsDaoTest" />
+      <option name="METHOD_NAME" value="clearAllDepartmentNews" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sql2oUsersDaoTest.getAllUsersInDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="sql2oDepartmentNewsDaoTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="News-portal.test" />
       <extension name="coverage">
         <pattern>
@@ -154,8 +141,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.sql2oUsersDaoTest" />
-      <option name="METHOD_NAME" value="getAllUsersInDepartments" />
+      <option name="MAIN_CLASS_NAME" value="dao.sql2oDepartmentNewsDaoTest" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sql2oDepartmentNewsDaoTest.getAllDepartmentNews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="News-portal.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.sql2oDepartmentNewsDaoTest" />
+      <option name="METHOD_NAME" value="getAllDepartmentNews" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.sql2oUsersDaoTest" />
-        <item itemvalue="JUnit.sql2oDepartmentDaoTest.clearAll" />
-        <item itemvalue="JUnit.sql2oUsersDaoTest.clearAllUsers" />
-        <item itemvalue="JUnit.sql2oUsersDaoTest.deleteById" />
-        <item itemvalue="JUnit.sql2oUsersDaoTest.getAllUsersInDepartments" />
+        <item itemvalue="JUnit.sql2oDepartmentNewsDaoTest" />
+        <item itemvalue="JUnit.sql2oDepartmentNewsDaoTest.clearAllDepartmentNews" />
+        <item itemvalue="JUnit.sql2oDepartmentNewsDaoTest.add" />
+        <item itemvalue="JUnit.sql2oDepartmentNewsDaoTest.getAllDepartmentNews" />
+        <item itemvalue="JUnit.sql2oDepartmentNewsDaoTest.findById" />
       </list>
     </recent_temporary>
   </component>
@@ -193,26 +196,20 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/dao/sql2oUsersDaoTest.java</url>
-          <line>55</line>
-          <properties class="dao.sql2oUsersDaoTest" method="deleteById">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/News_portal$sql2oDepartmentNewsDaoTest.ic" NAME="sql2oDepartmentNewsDaoTest Coverage Results" MODIFIED="1652905183464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dao.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/News_portal$sql2oDepartmentNewsDaoTest_add.ic" NAME="sql2oDepartmentNewsDaoTest.add Coverage Results" MODIFIED="1652875394741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dao.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/News_portal$sql2oDepartmentDaoTest.ic" NAME="sql2oDepartmentDaoTest Coverage Results" MODIFIED="1652863389281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dao.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/News_portal$sql2oUsersDaoTest.ic" NAME="sql2oUsersDaoTest Coverage Results" MODIFIED="1652865743597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>dao.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/News_portal$sql2oNewsDaoTest.ic" NAME="sql2oNewsDaoTest Coverage Results" MODIFIED="1652875490466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dao.*</FILTER>
     </SUITE>
   </component>

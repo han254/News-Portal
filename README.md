@@ -30,6 +30,9 @@ Run these commands
 ## Technologies Used
 * Java
 * Spark
+* Postman
+* Psql
+* Intellij
 ### Support and contact details
 
 You can contact me through my email[peternjenga1706@gmail.com]

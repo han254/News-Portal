@@ -7,12 +7,12 @@ public class News {
 
     private String content;
 
-    private String departmentname;
+    private String departmentName;
 
-    public News(String title, String content, String departmentname) {
+    public News(String title, String content, String departmentName) {
         this.title = title;
         this.content = content;
-        this.departmentname = departmentname;
+        this.departmentName = departmentName;
     }
 
     public int getId() {
@@ -39,11 +39,11 @@ public class News {
         this.content = content;
     }
 
-    public String getDepartmentname() {
-        return departmentname;
+    public String getDepartmentName() {
+        return departmentName;
     }
 
-    public void setDepartmentname(String departmentname) {
-        this.departmentname = departmentname;
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 }
