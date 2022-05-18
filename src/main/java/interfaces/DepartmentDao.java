@@ -10,15 +10,11 @@ public interface DepartmentDao {
     public static void add(Department department) {
 
     }
-    static List<Department> getAll() {
-        return null;
-    }
+    public List<Department> getAll();
 
-    static void deleteById(int id) {
-    }
+    public void deleteById(int id);
 
-    static void clearAll() {
-    }
+    public void clearAll();
 }
 
 

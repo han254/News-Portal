@@ -4,19 +4,19 @@ import java.util.Objects;
 
 public class Department {
     private int id;
-    private String departmentname;
+    private String departmentName;
     private String description;
     private int numberOfEmployees;
 
-    public Department(String departmentname, String description, int numberOfEmployees) {
-        this.departmentname = departmentname;
+    public Department(String departmentName, String description, int numberOfEmployees) {
+        this.departmentName = departmentName;
         this.description = description;
         this.numberOfEmployees = numberOfEmployees;
     }
 
-    public Department(int id, String departmentname, String description, int numberOfEmployees) {
+    public Department(int id, String departmentName, String description, int numberOfEmployees) {
         this.id = id;
-        this.departmentname = departmentname;
+        this.departmentName = departmentName;
         this.description = description;
         this.numberOfEmployees = numberOfEmployees;
     }
@@ -26,12 +26,12 @@ public class Department {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Department that = (Department) o;
-        return id == that.id && numberOfEmployees == that.numberOfEmployees && departmentname.equals(that.departmentname) && description.equals(that.description);
+        return id == that.id && numberOfEmployees == that.numberOfEmployees && departmentName.equals(that.departmentName) && description.equals(that.description);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, departmentname, description, numberOfEmployees);
+        return Objects.hash(id, departmentName, description, numberOfEmployees);
     }
 
     public int getId() {
@@ -42,12 +42,12 @@ public class Department {
         this.id = id;
     }
 
-    public String getDepartmentname() {
-        return departmentname;
+    public String getDepartmentName() {
+        return departmentName;
     }
 
-    public void setDepartmentname(String departmentname) {
-        this.departmentname = departmentname;
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
     }
 
     public String getDescription() {

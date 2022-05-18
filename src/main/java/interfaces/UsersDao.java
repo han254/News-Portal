@@ -14,7 +14,7 @@ public interface UsersDao {
     List<Users> getAllUsers();
 
 
-    List<Department> getAllUserInDepartments(int user_id);
+    List<Users> getAllUsersInDepartments(int departmentId);
 
 
     void deleteById(int id);

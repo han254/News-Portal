@@ -11,22 +11,21 @@ import org.sql2o.Sql2o;
 import static org.junit.jupiter.api.Assertions.*;
 
 class sql2oDepartmentDaoTest {
-    private sql2oDepartmentDao sql2oDepartmentDao;
+    private sql2oDepartmentDao DepartmentDao;
     private Connection conn;
 
     @BeforeEach
     public void setUp() {
-        String Connect = "jdbc:h2:mem:testing:INIT=RUNSCRIPT from 'classpath:dao/create.sql'";
+        String Connect = "jdbc:h2:mem:testing;INIT=RUNSCRIPT from 'classpath:DB/create.sql'";
         Sql2o sql2o = new Sql2o(Connect, "", "");
-        sql2oDepartmentDao = new sql2oDepartmentDao(sql2o);
+        DepartmentDao = new sql2oDepartmentDao(sql2o);
         conn = sql2o.open();
     }
     @Test
     public void addingDepartmentSetsId() throws Exception {
         Department department = setupNewDepartment();
         int id = department.getId();
-        sql2oDepartmentDao.add(department);
-        assertEquals(id,department.getId());
+        assertEquals(1,id);
     }
 @Test
 public void getAll() throws Exception {
@@ -51,12 +50,14 @@ public void getAll() throws Exception {
         assertEquals(0, DepartmentDao.getAll().size());
     }
 
-    private Department setupNewDepartment() {
-        return new Department("Finance", " acquiring and utilizing money for financing the activities of the tourism business", 20);
+    public Department setupNewDepartment() {
+        Department department= new Department("Finance", " acquiring and utilizing money for financing the activities of the tourism business", 20);
+        DepartmentDao.add(department);
+        return department;
     }
 
     @AfterEach
-    public void closeconn() {
+    public void tearDown() {
         conn.close();
         System.out.println("connection closed");
     }

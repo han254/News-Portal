@@ -6,6 +6,7 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class sql2oDepartmentDao implements DepartmentDao {
@@ -15,7 +16,7 @@ public class sql2oDepartmentDao implements DepartmentDao {
         this.sql2o = sql2o;
     }
     public void add(Department department) {
-        String query = "INSERT INTO department (departmentname,description,numberOfEmployees VALUES (:departmentName,:description,:numberOfEmployees)";
+        String query = "INSERT INTO department (departmentName,description,numberOfEmployees) VALUES (:departmentName,:description,:numberOfEmployees)";
         try (Connection conn = sql2o.open()) {
             int id = (int) conn.createQuery(query, true)
                     .bind(department)
@@ -25,21 +26,36 @@ public class sql2oDepartmentDao implements DepartmentDao {
         }catch (Sql2oException e){
             System.out.println(e.getMessage());
         }
-
     }
     public List<Department> getAll() {
         String query = "SELECT * FROM department";
         try (Connection conn = sql2o.open()) {
-            return conn.createQuery(query, true)
+            return conn.createQuery(query)
                     .executeAndFetch(Department.class);
         }
     }
-    public List<Department> deleteById(int id) {
-        String query = "DELETE from departments WHERE id = :id";
+    public void deleteById(int id) {
+        String query = "DELETE from department WHERE id = :id";
         try (Connection conn = sql2o.open()) {
-            return conn.createQuery(query, true)
-                    .executeAndFetch(Department.class);
+            conn.createQuery(query, true)
+                    .addParameter("id",id)
+                    .executeUpdate();
         }
+        catch (Sql2oException e){
+            System.out.println(e.getMessage());
+        }
+        }
+
+    @Override
+    public void clearAll() {
+        String query = "DELETE from department ";
+        try (Connection conn = sql2o.open()) {
+            conn.createQuery(query)
+                    .executeUpdate();
+        }
+        catch (Sql2oException e){
+            System.out.println(e.getMessage());
         }
     }
+}
 
