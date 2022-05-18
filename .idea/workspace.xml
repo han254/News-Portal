@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7d81fc5-607b-4f26-af05-45a614de8b54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/DepartmentNews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/sql2oDepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oDepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/sql2oDepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oDepartmentDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/News.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
