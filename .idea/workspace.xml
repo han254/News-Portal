@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7d81fc5-607b-4f26-af05-45a614de8b54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oDepartmentNewsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/sql2oNewsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/DepartmentNewsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/NewsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oDepartmentNewsDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/sql2oNewsDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/DepartmentNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/DepartmentNews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/create.sql" afterDir="false" />
-    </list>
+    <list default="true" id="a7d81fc5-607b-4f26-af05-45a614de8b54" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
