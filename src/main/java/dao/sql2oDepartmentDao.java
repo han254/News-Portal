@@ -3,7 +3,6 @@ package dao;
 import interfaces.DepartmentDao;
 import models.Department;
 import org.sql2o.Connection;
-import org.sql2o.Query;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
@@ -13,8 +12,6 @@ public class sql2oDepartmentDao implements DepartmentDao {
     public sql2oDepartmentDao(Sql2o sql2o) {
         this.sql2o = sql2o;
     }
-
-    @Override
     public void add(Department department) {
         String query = "INSERT INTO department (departmentname,description,numberOfEmployees VALUES (:departmentName,:description,:numberOfEmployees)";
         try (Connection conn = sql2o.open()) {
