@@ -17,11 +17,11 @@ Run these commands
 
 ```CREATE DATABASE news_portal;```
 
-```CREATE TABLE users(id serial PRIMARY KEY,name text,role varchar,department_id int);```
+```CREATE TABLE IF NOT EXISTS department( id int PRIMARY KEY auto_increment, departmentname VARCHAR, description VARCHAR,numberOfEmployees int);```
 
-```CREATE TABLE departments(id serial PRIMARY KEY,name varchar,description varchar,employees int);```
+```CREATE TABLE IF NOT EXISTS users(id int PRIMARY KEY auto_increment,name VARCHAR,position VARCHAR,role VARCHAR,departmentId VARCHAR,email VARCHAR);```
 
-```CREATE TABLE news(id serial PRIMARY KEY,text varchar,department varchar);```
+```CREATE TABLE IF NOT EXISTS news (id int PRIMARY KEY auto_increment,title VARCHAR,content VARCHAR,departmentname VARCHAR,);```
 
 ### Author's Information
 * Github: [Peter Njenga](https://github.com/han254)
@@ -30,6 +30,9 @@ Run these commands
 ## Technologies Used
 * Java
 * Spark
+* Postman
+* Psql
+* Intellij
 ### Support and contact details
 
 You can contact me through my email[peternjenga1706@gmail.com]
