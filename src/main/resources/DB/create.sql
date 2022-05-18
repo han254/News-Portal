@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS users(
  name VARCHAR,
  position VARCHAR,
  role VARCHAR,
- department VARCHAR,
+ departmentId VARCHAR,
  email VARCHAR
 );
 

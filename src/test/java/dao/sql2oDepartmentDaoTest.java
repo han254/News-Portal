@@ -28,11 +28,31 @@ class sql2oDepartmentDaoTest {
         sql2oDepartmentDao.add(department);
         assertEquals(id,department.getId());
     }
+@Test
+public void getAll() throws Exception {
+    Department department = setupNewDepartment();
+    Department department1 = setupNewDepartment();
+    assertEquals(2, DepartmentDao.getAll().size());
+}
+    @Test
+    public void deleteById() throws Exception {
+        Department testDepartment = setupNewDepartment();
+        Department otherDepartment = setupNewDepartment();
+        assertEquals(2, DepartmentDao.getAll().size());
+        DepartmentDao.deleteById(testDepartment.getId());
+        assertEquals(1, DepartmentDao.getAll().size());
+    }
 
+    @Test
+    public void clearAll() throws Exception {
+        Department testDepartment = setupNewDepartment();
+        Department otherDepartment = setupNewDepartment();
+        DepartmentDao.clearAll();
+        assertEquals(0, DepartmentDao.getAll().size());
+    }
 
     private Department setupNewDepartment() {
         return new Department("Finance", " acquiring and utilizing money for financing the activities of the tourism business", 20);
-
     }
 
     @AfterEach
